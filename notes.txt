@@ -1,1 +1,14 @@
-11:20
+installed app with viie 
+
+use eye dropper extenstion to check colors when cloning 
+
+for icons, use https://react-icons.github.io/react-icons
+
+
+install the icons first
+
+import { FaBeer } from 'react-icons/fa';
+the last two letters should corresound to the first two letters of the icon name
+import the logo as < BsCart2 /> inside a div
+
+26:00
