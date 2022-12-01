@@ -1,6 +1,8 @@
 import React from 'react'
 import logo from '../assets/logo.png'
 import { BsCart2} from 'react-icons/bs';
+import { FiSearch} from 'react-icons/fi';
+import { GoSettings} from 'react-icons/go';
 
 
 const Navbar = () => {
@@ -12,8 +14,35 @@ const Navbar = () => {
       </div>
 
 
-
       {/* Middle */}
+    <div className="hidden sm:flex relative overflow-hidden">
+      <input type="search" placeholder='Search' className='w-[20rem] py-2 rounded-full pl-12 placeholder:text-[#131921] outline-0'/>
+      <button className='absolute bg-orange-400 h-full w-12 right-0 flex items-center justify-center rounded-r-full'>
+         <FiSearch /> 
+      </button>
+      <button className='absolute text-[#131921] bg-[#f3f3f3]  h-full w-12  flex items-center justify-center rounded-l-full'>
+         <GoSettings /> 
+      </button>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       {/* Right*/}
       <div className="relative flex items-center justify-center  text-white text-[28px]">
        < BsCart2 />

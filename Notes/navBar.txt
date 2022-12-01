@@ -1,0 +1,22 @@
+installed app with vite 
+then installed tailwind
+
+use eye dropper extenstion to check colors when cloning 
+
+for icons, use https://react-icons.github.io/react-icons
+
+
+install the icons first
+
+import { FaBeer } from 'react-icons/fa';
+import { FiSearch} from 'react-icons/fi'; 
+i.e import { IconName} from 'react-icons/icon two initials';
+the last two letters should corresound to the first two letters of the icon name
+
+
+import the logo as < BsCart2 /> inside a div
+to position the search icon inside the serach, make the div relative, then make the icon absolute and give it clases to position it where you want 
+
+to get rid of the black lines that appear on top and bottom when you click search, add outline-0 to the className
+
+38:00
