@@ -1,0 +1,60 @@
+make a div give is a bg 
+<div className='bg-[#232f3e] h-8'>
+
+we add the buttons, add a const above return
+const buttons=["Deals Store", "New Realeases", "Gift Cards", "Pet Supplies", "Handmade", "Coupons"]
+
+and then lets map through in the div 
+{buttons.map(())}
+{buttons.map((button) =>  )}
+
+for each button we want a div
+{buttons.map((button) => (<div className=""></div> ))}\
+
+to test it you can at HI 
+ {buttons.map((button) => (<div className="">
+            HI
+        </div> ))}
+
+on the screen it will show 
+HI
+HI
+HI
+HI
+HI
+HI
+
+
+max-w-[70vw]
+means it will display on 70% of the screen
+
+change HI to {button}
+it will then display all the const buttons elements we made 
+
+so far it looks like 
+<div className="bg-[#232f3e]">
+        
+        <div className='flex items-center justify-between  h-8 max-w-[70vw] mx-auto'>
+             {buttons.map((button) => (
+                <div className="">{button} </div> 
+        ))}
+        </div>
+
+    </div>
+
+
+how to make text transparent or blend in with the background 
+text-gray-200/70
+
+to group 2 divs, eg we want one div to show on hover and is below the button, we group them by adding group to the parent div, <div className="group
+and then on whatever we want to hover, we give it a class of
+group-hover:bg-white
+
+<div className="group whitespace-nowrap cursor-pointer">
+    <div className="text-gray-200/70 hover:text-white px-[0.7rem]">{button} </div> 
+    <div className="h-[2px] w-full group-hover:bg-white"></div>
+</div> 
+
+how to make hover smooth add duration-100 ease-out after hover
+
+1:28:00
