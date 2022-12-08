@@ -57,4 +57,4 @@ group-hover:bg-white
 
 how to make hover smooth add duration-100 ease-out after hover
 
-1:28:00
+https://cssgradient.io/   an onlinr generator for css

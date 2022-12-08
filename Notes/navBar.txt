@@ -19,4 +19,3 @@ to position the search icon inside the serach, make the div relative, then make 
 
 to get rid of the black lines that appear on top and bottom when you click search, add outline-0 to the className
 
-38:00
