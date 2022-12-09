@@ -2,4 +2,6 @@ to have a background color, in App.jsx below all components add a div and give i
 
 <div className=" bg-[#eaeded] h-screen"></div>
 
-1:58:00
+
+
+2:09:00

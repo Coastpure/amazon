@@ -7,7 +7,7 @@ const Add = () => {
   return (
     <div className="bg-[#232f3e]">
         
-        <div className='flex items-center justify-between h-8 md:max-w-[70vw] mx-auto px-10'>
+        <div className='flex items-center justify-between h-8 sm:max-w-[80vw] md:max-w-[80vw] lg:max-w-[55vw] mx-auto sm:px-10 text-[15px] sm:[16px]'>
              {buttons.map((button) => (
                 <div className="group whitespace-nowrap cursor-pointer">
                     <div className="text-gray-200/70 hover:text-white px-[0.7rem]">{button} </div> 
