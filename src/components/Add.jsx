@@ -3,7 +3,7 @@ import React from 'react'
 
 
 const Add = () => {
-    const buttons=["Today's Deals", "New Releases", "Gift Cards", "Pet Supplies", "Handmade", "Coupons"]
+    const buttons=["Christmas Deals","Today's Deals", "New Releases", "Gift Cards", "Pets"]
   return (
     <div className="bg-[#232f3e]">
         

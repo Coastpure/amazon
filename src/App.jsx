@@ -2,6 +2,7 @@ import React from 'react';
 import Add from './components/Add';
 import Hero  from './components/Hero';
 import Navbar from './components/Navbar';
+import Products from './components/Products';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
     {/* Hero */}
     <Hero />
     {/* Products */}
+    <Products />
     {/* Deals */}
     {/* Trending */}
     {/* Footer */}

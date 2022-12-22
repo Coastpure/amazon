@@ -1,0 +1,120 @@
+to remove background of an image use,
+
+https://www.remove.bg/
+
+to convert webp to png 
+
+https://cloudconvert.com/webp-to-png
+
+
+start by making the props 
+
+first create an object 
+const products = [
+        {title:"Headphones",  image:headphones}]
+
+call a component called product which we haven't made yet 
+ <Product />
+make the component Product inside the components folder 
+
+
+inside Products.jsx, map the object  and pass the object to the <Product /> i.e 
+{products.map((product) => ( 
+    <Product 
+        title={product.title} image={product.image}/> 
+))}
+
+then duplicate the object values to add more stuff 
+const Products = () => {
+    const products = [
+        {title:"Headphones",  image:headphones},
+        {title:"Headphones",  image:headphones},
+        {title:"Headphones",  image:headphones},
+        {title:"Headphones",  image:headphones},
+        {title:"Headphones",  image:headphones},
+        {title:"Headphones",  image:headphones},
+    ]
+
+
+so it becomes 
+
+const Products = () => {
+    const products = [
+        {title:"Headphones",  image:headphones},
+        {title:"Headphones",  image:headphones},
+        {title:"Headphones",  image:headphones},
+        {title:"Headphones",  image:headphones},
+        {title:"Headphones",  image:headphones},
+        {title:"Headphones",  image:headphones},
+    ]
+  return <div className=" bg-[#eaeded] h-screen">
+    {products.map((product) => ( 
+    <Product 
+        title={product.title} image={product.image}/> 
+    ))}
+
+
+and now we have our props 
+we can access our props inside the Product.jsx file
+
+pass them 
+const Product = ({title, image}) => {
+
+<div>{title}</div>
+
+also pass in the image 
+
+<div>
+        {title}
+        <img src = {image} />
+    </div>
+
+
+
+
+in Products.jsx it looks like this 
+
+import React from 'react';
+import headphones from '../assets/headphones.png';
+import laptops from '../assets/laptop.png';
+import phone from '../assets/phone.png';
+import Product from './Product';
+
+const Products = () => {
+    const products = [
+        {title:"Headphones",  image:headphones},
+        {title:"Laptop",  image:laptops},
+        {title:"Phone",  image:phone},
+        {title:"Headphones",  image:headphones},
+        {title:"Laptop",  image:laptops},
+        {title:"Phone",  image:phone},
+    ]
+  return <div className=" bg-[#eaeded] h-screen">
+    {products.map((product) => ( 
+    <Product 
+        title={product.title} image={product.image}/> 
+    ))}
+
+
+  </div>
+  
+}
+
+
+in Product.jsx it looks like this 
+
+import React from 'react'
+
+const Product = ({title, image}) => {
+  return (
+    <div>
+        {title}
+        <img src = {image} />
+    </div>
+  )
+}
+
+
+Now lets use them as a card
+
+we'll style inside Product.jsx
