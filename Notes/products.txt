@@ -118,3 +118,5 @@ const Product = ({title, image}) => {
 Now lets use them as a card
 
 we'll style inside Product.jsx
+
+3:11
