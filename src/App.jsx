@@ -23,7 +23,6 @@ function App() {
     <Deals />
     {/* Footer */}
     <Footer />
-   
     </div>
   )
 }
