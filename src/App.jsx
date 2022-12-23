@@ -1,5 +1,7 @@
 import React from 'react';
 import Add from './components/Add';
+import Deals from './components/Deals';
+import Footer from './components/Footer';
 import Hero  from './components/Hero';
 import Navbar from './components/Navbar';
 import Products from './components/Products';
@@ -18,9 +20,10 @@ function App() {
     {/* Products */}
     <Products />
     {/* Deals */}
-    {/* Trending */}
+    <Deals />
     {/* Footer */}
-    <div className=" bg-[#eaeded] h-screen"></div>
+    <Footer />
+   
     </div>
   )
 }
